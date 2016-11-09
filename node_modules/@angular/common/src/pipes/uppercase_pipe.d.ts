@@ -7,13 +7,18 @@
  */
 import { PipeTransform } from '@angular/core';
 /**
- * Implements uppercase transforms to text.
+ * @ngModule CommonModule
+ * @whatItDoes Transforms string to uppercase.
+ * @howToUse `expression | uppercase`
+ * @description
+ *
+ * Converts value into lowercase string using `String.prototype.toUpperCase()`.
  *
  * ### Example
  *
- * {@example core/pipes/ts/lowerupper_pipe/lowerupper_pipe_example.ts region='LowerUpperPipe'}
+ * {@example common/pipes/ts/lowerupper_pipe.ts region='LowerUpperPipe'}
  *
- * @experimental
+ * @stable
  */
 export declare class UpperCasePipe implements PipeTransform {
     transform(value: string): string;

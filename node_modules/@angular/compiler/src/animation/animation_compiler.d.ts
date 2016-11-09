@@ -1,14 +1,11 @@
-import { CompileDirectiveMetadata } from '../compile_metadata';
 import * as o from '../output/output_ast';
-import * as t from '../template_parser/template_ast';
-export declare class CompiledAnimation {
+import { AnimationEntryAst } from './animation_ast';
+export declare class AnimationEntryCompileResult {
     name: string;
-    statesMapStatement: o.Statement;
-    statesVariableName: string;
-    fnStatement: o.Statement;
-    fnVariable: o.Expression;
-    constructor(name: string, statesMapStatement: o.Statement, statesVariableName: string, fnStatement: o.Statement, fnVariable: o.Expression);
+    statements: o.Statement[];
+    fnExp: o.Expression;
+    constructor(name: string, statements: o.Statement[], fnExp: o.Expression);
 }
 export declare class AnimationCompiler {
-    compileComponent(component: CompileDirectiveMetadata, template: t.TemplateAst[]): CompiledAnimation[];
+    compile(factoryNamePrefix: string, parsedAnimations: AnimationEntryAst[]): AnimationEntryCompileResult[];
 }
