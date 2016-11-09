@@ -1,16 +1,7 @@
-import {Component, ViewEncapsulation} from '@angular/core';
-
+import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
-    moduleId: module.id,
-    templateUrl: './app.component.html',
-    styleUrls: ["./app.component.css"],
-    encapsulation: ViewEncapsulation.None,
+    template: require("./app.component.html"),
+    styles: [require("./app.component.css")]
 })
-export class AppComponent {
-    title: string;
-
-    constructor() {
-        this.title = "Angular2 Min Seed";
-    }
-}
+export class AppComponent { }
