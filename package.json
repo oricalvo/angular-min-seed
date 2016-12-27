@@ -1,0 +1,32 @@
+{
+  "name": "angular-quickstart",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node_modules/.bin/sjs"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "@angular/common": "~2.4.0",
+    "@angular/compiler": "~2.4.0",
+    "@angular/core": "~2.4.0",
+    "@angular/forms": "~2.4.0",
+    "@angular/http": "~2.4.0",
+    "@angular/platform-browser": "~2.4.0",
+    "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/router": "~3.4.0",
+    "@types/systemjs": "^0.19.31",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.1",
+    "systemjs-server": "^1.1.32",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.45",
+    "typescript": "^2.1.0"
+  }
+}
