@@ -1,5 +1,5 @@
 {
-  "name": "angular-quickstart",
+  "name": "angular2-min-seed",
   "version": "1.0.0",
   "scripts": {
     "start": "node build/dev.js"
@@ -19,19 +19,17 @@
     "@angular/platform-browser": "^2.4.6",
     "@angular/platform-browser-dynamic": "^2.4.6",
     "@angular/router": "^3.4.6",
-    "@types/node": "^6.0.60",
-    "@types/systemjs": "^0.19.31",
-    "node-sass": "^4.1.1",
     "reflect-metadata": "^0.1.8",
     "rxjs": "^5.0.3",
     "shelljs": "^0.7.5",
     "systemjs-server": "^1.1.32",
-    "typescript": "^2.1.5",
     "zone.js": "^0.7.6"
   },
   "devDependencies": {
-    "@types/node": "^6.0.45",
+    "typescript": "^2.1.0",
     "node-sass": "^4.5.0",
-    "typescript": "^2.1.0"
+    "@types/node": "^6.0.60",
+    "@types/systemjs": "^0.19.31",
+    "@types/node": "^6.0.45"
   }
 }
