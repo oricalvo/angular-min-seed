@@ -1,0 +1,16 @@
+<h1>Contact List</h1>
+
+<ul>
+    <li *ngFor="let contact of contacts;trackBy:identify">
+        <label>
+            <input type="checkbox" [(ngModel)]="contact.selected">
+            <span>{{contact.name}}</span>
+        </label>
+
+        <my-contact-details [contact]="contact"></my-contact-details>
+    </li>
+</ul>
+
+<div>
+    <button (click)="dump()">Dump</button>
+</div>

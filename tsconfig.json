@@ -9,5 +9,11 @@
     "removeComments": false,
     "noImplicitAny": false,
     "lib": ["ES6", "DOM"]
-  }
+  },
+  "files": [
+    "app/main.ts"
+  ],
+  "exclude": [
+    "../../node_modules/*"
+  ]
 }
