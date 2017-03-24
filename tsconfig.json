@@ -11,7 +11,8 @@
     "lib": ["ES6", "DOM"]
   },
   "files": [
-    "app/main.ts"
+    "app/main.ts",
+    "server/main.ts"
   ],
   "exclude": [
     "../../node_modules/*"
