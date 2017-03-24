@@ -1,17 +1,19 @@
-const shelljs = require("shelljs");
+const buProcess = require("build-utils/process");
 const path = require("path");
 
-const tscFilePath = "\"" + path.join(__dirname, "../node_modules/.bin/tsc") + "\"";
-if(shelljs.exec(tscFilePath).code != 0) {
-    console.error("Typscript compilation failed");
-    return;
+Promise.resolve()
+    .then(compileTS)
+    .then(compileSASS)
+    .then(runServerAndBrowser);
+
+function compileTS() {
+    return buProcess.exec(path.normalize("node_modules/.bin/tsc"));
 }
 
-const sass = "\"" + path.join(__dirname, "../node_modules/.bin/node-sass.cmd") + "\"" + " --recursive ./app --output ./app";
-if(shelljs.exec(sass).code != 0) {
-    console.error("SCSS compilation failed");
-    return;
+function compileSASS() {
+    return buProcess.exec(path.normalize("node_modules/.bin/node-sass") + " --recursive ./app --output ./app");
 }
 
-const sjs = "\"" + path.join(__dirname, "../node_modules/.bin/sjs") + "\"";
-shelljs.exec(sjs);
+function runServerAndBrowser() {
+    return buProcess.exec(path.normalize("node_modules/.bin/nopack"));
+}

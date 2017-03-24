@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectTasksOptions">
-    <TaskOptions isEnabled="false">
-      <option name="arguments" value="$FileName$ $FileNameWithoutExtension$.css" />
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="$FileName$ $FileNameWithoutExtension$.css --source-map $FileNameWithoutExtension$.css.map " />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ALWAYS" />
@@ -14,13 +14,13 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
-      <option name="program" value="node-sass.cmd" />
+      <option name="program" value="$ProjectFileDir$/node_modules/.bin/node-sass.cmd" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
       <envs />
     </TaskOptions>
-    <TaskOptions isEnabled="true">
+    <TaskOptions isEnabled="false">
       <option name="arguments" value="--no-cache --update $FileName$:$FileNameWithoutExtension$.css" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
