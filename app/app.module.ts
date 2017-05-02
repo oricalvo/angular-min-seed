@@ -1,7 +1,6 @@
 import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {AppComponent}  from './components/app.component';
-import {ClockComponent} from "./components/clock.component";
+import {AppComponent} from "./app.component";
 
 @NgModule({
     imports: [
@@ -9,7 +8,6 @@ import {ClockComponent} from "./components/clock.component";
     ],
     declarations: [
         AppComponent,
-        ClockComponent,
     ],
     bootstrap: [AppComponent],
     providers: [

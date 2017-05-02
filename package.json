@@ -2,7 +2,7 @@
   "name": "angular2-min-seed",
   "version": "1.0.0",
   "scripts": {
-    "start": "node build/dev.js"
+    "start": "bu dev"
   },
   "licenses": [
     {
@@ -18,15 +18,13 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "reflect-metadata": "^0.1.8",
     "rxjs": "^5.0.3",
+    "systemjs": "^0.20.12",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@types/node": "^7.0.5",
-    "@types/systemjs": "^0.20.0",
+    "@types/node": "^7.0.15",
+    "http-server": "^0.10.0",
     "build-utils": "^1.0.29",
-    "node-sass": "^4.5.0",
-    "nodemon": "^1.11.0",
-    "nopack": "^1.1.11",
     "typescript": "^2.2.0"
   }
 }
