@@ -2,7 +2,5 @@
 node_modules
 app/**/*.js.map
 app/**/*.js
-app/**/*.css.map
-app/**/*.css
 build/**/*.js.map
 build/**/*.js

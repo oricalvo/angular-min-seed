@@ -4,16 +4,20 @@ import * as cli from "build-utils/cli";
 cli.command("dev", dev);
 cli.run();
 
-function dev() {
-    return Promise.resolve()
-        .then(runServer)
-        .then(runBrowser);
+async function dev() {
+    await compileTS();
+    await runServer();
+    await runBrowser();
 }
 
-function runServer() {
+async function compileTS() {
+    return process.runbin("tsc");
+}
+
+async function runServer() {
     process.exec("node_modules/.bin/http-server");
 }
 
-function runBrowser() {
+async function runBrowser() {
     process.open("http://localhost:8080/index.html");
 }
