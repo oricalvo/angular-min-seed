@@ -3,20 +3,9 @@
 </div>
 
 <div class="content">
-    <p>A minimal Angular2 project that integrates only the following aspects</p>
-
     <ul>
-        <li>
-            Typescript compilation
-        </li>
-        <li>
-            Simple execution using "npm start"
+        <li *ngFor="let contact of contacts">
+            <span>{{contact.name}}</span>
         </li>
     </ul>
-
-    <p>No webpack, no E2E, no AOT, just Angular !!!</p>
-</div>
-
-<div class="footer">
-    Ori Calvo @2017
 </div>
